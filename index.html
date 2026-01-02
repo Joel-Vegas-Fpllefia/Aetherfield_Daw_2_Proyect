@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Proyecto</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!---->
+    
 </head>
-<body>
-    <h1>Joel Vegas Romero</h1>
+
+<body class="">
+    <header class="w-full h-15 fixed bg-transparent flex items-center">
+        <nav class="w-full flex justify-between items-center">
+            <div>
+                <img src="img/Aetherfield_logo.svg" alt="" class="m-5">
+            </div>
+
+            <ul class="flex items-center justify-end md:justify-between w-auto md:w-[395px] m-4">
+                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">Product</li>
+                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">Journal</li>
+                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">About</li>
+                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">Carrers</li>
+                <li class="hidden md:block">
+                    <a href="" class="group md:flex justify-between items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer">
+                        <p>Get started</p>
+                        <img src="img/Arrow_Black.svg" alt="" class="transition-transform duration-500 group-hover:translate-x-2">
+                    </a>
+                </li>
+                <li class="block hover:opacity-25 cursor-pointer duration-700  md:hidden lg:hidden">
+                    <img src="./img/Menu_icon_more.svg" alt="">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main></main>
+    <footer></footer>
 </body>
 </html>
