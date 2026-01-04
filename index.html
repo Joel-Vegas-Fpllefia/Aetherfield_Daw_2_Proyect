@@ -11,7 +11,7 @@
 </head>
 
 <body class="">
-    <header class="w-full h-15 fixed bg-transparent flex items-center">
+    <header class="w-full h-15 fixed bg-transparent flex-col items-center">
         <nav class="w-full flex justify-between items-center">
             <div>
                 <img src="img/Aetherfield_logo.svg" alt="" class="m-5">
@@ -28,14 +28,45 @@
                         <img src="img/Arrow_Black.svg" alt="" class="transition-transform duration-500 group-hover:translate-x-2">
                     </a>
                 </li>
-                <li class="block hover:opacity-25 cursor-pointer duration-700  md:hidden lg:hidden">
-                    <img src="./img/Menu_icon_more.svg" alt="">
+                <li id="more_header_btn" class="block hover:opacity-25 cursor-pointer duration-700  md:hidden lg:hidden">
+                    <img src="./img/Menu_icon_more.svg" alt="" id="icon_more_menu" class="w-4 h-4">
                 </li>
             </ul>
         </nav>
+        <div  id="list_menu_more" class="hidden md:hidden">
+            <ul>
+                <li class="font-bold hover:opacity-25 duration-700 cursor-pointer">Product</li>
+                <li class="font-bold hover:opacity-25 duration-700 cursor-pointer">Journal</li>
+                <li class="font-bold hover:opacity-25 duration-700 cursor-pointer">About</li>
+                <li class="font-bold hover:opacity-25 duration-700 cursor-pointer">Carrers</li>
+                <li class="">
+                    <a href="" class="group flex items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer">
+                        Get started
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main></main>
     <footer></footer>
 </body>
+<script>
+    const btn_more = document.querySelector("#more_header_btn")
+    let icon = document.querySelector("#icon_more_menu")
+    let menu_more = document.querySelector("#list_menu_more")
+
+    btn_more.addEventListener("click",() =>{
+        // Comprobamos si el src actual contiene el nombre de la flecha
+        if (icon.src.includes('Menu_icon_more.svg')) {
+            icon.src = 'img/Close_Icon.svg'; // Cambia al nuevo icono
+            menu_more.classList.remove("hidden");
+            menu_more.classList.add("block");
+        } else {
+            icon.src = 'img/Menu_icon_more.svg'; // Vuelve a la flecha original
+            menu_more.classList.remove("block");
+            menu_more.classList.add("hidden");
+        }
+    })
+</script>
 </html>
