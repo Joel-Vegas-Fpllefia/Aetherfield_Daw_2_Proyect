@@ -11,7 +11,8 @@
 </head>
 
 <body class="">
-    <header class="w-full h-15 fixed bg-transparent flex-col items-center">
+    <!-- fixed top-0 left-0 -->
+    <header class="w-full h-15 fixed top-0 left-0 bg-transparent flex-col items-center">
         <nav class="w-full flex justify-between items-center">
             <div>
                 <img src="img/Aetherfield_logo.svg" alt="" class="m-5">
@@ -48,7 +49,19 @@
         </div>
     </header>
 
-    <main></main>
+    <main class="static">
+        <!-- Tailwind solo llega hasta el 96 rem = 384px -->
+        <div class="h-[642.17px] flex flex-col items-center gap-8 justify-center bg-blue mt-32 md:h-[919.33px] lg:h-[1074px] ">
+            <div class="text-center w-[335]">
+                <h1 class="text-4xl ">Sustainability insights,</h1>
+                <h2 class="text-2xl ">built for business</h2>
+                <p class="text-center">Track impact, reduce emissions, and accelerate progress—with clarity and confidence.</p>
+            </div>
+            <div>
+                <p>as</p>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 <script>
