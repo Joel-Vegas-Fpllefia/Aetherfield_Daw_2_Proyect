@@ -18,7 +18,7 @@ list-inside: Es fundamental. Por defecto, las viñetas (los cuadrados) se dibuja
 # Cuando poner tamaños fijos 
 Cuando pongo los tamaños fijos y que tengo que poner a cambio del tamaño fijo 
 
-# Ancho y alto de la imagen
+# Ancho y alto de la imagen para hacerla responsive
 Como se puede hacer sin indicar los px exactos: 
 Para la imagen, en lugar de una altura, usa el ancho relativo con puntos de interrupción (breakpoints):
 
