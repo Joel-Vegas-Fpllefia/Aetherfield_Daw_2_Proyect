@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=geist-mono@400&display=swap" rel="stylesheet">
-    
+     
 
 
     <script>
@@ -167,33 +168,88 @@
         </div>
         
         <!-- Built for clarity -->
-         <div class="px-5 bg-[oklch(90.1%_0.076_70.697)] realative">
+         <div class="px-5 bg-[oklch(95.4%_0.038_75.164)] realative">
             <div class="flex flex-col items-center justify-center pt-10  md:pt-20 lg:pt-[120px]">
-                <h2>Built for clarity</h2>
-                <h2>Designed for action</h2>
+                <!-- Mirar tamaño reponsive enunciado -->
+                <h2 class="text-3xl font-semibold font-serif-pro">Built for clarity</h2>
+                <h2 class="text-4xl font-bold font-radio_2">Designed for action</h2>
             </div>
-            <div>
-                <div>
-                    <img src="./img/Built_For_Clarity/Clarity.svg" alt="">
+            <div class="flex flex-col mt-8 pb-10 justify-between gap-4 md:mt-10 md:pb-[80px] lg:flex-row lg:pb-[120px]">
+                <div class="bg-[oklch(97.1%_0.013_17.38)] px-10 py-10">
+                    <img src="./img/Built_For_Clarity/Clarity.svg" alt="" class="mb-6">
                     <div>
-                        <p>Clarity drives action</p>
+                        <p class="font-bold mb-2">Clarity drives action</p>
                         <p>We believe better decisions start with better data—measured, visible, and trusted.</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/Built_For_Clarity/Sustainability.svg" alt="">
+                <div class="bg-[oklch(97.1%_0.013_17.38)] px-10 py-10">
+                    <img src="./img/Built_For_Clarity/Sustainability.svg" alt="" class="mb-6">
                     <div>
-                        <p>Sustainability is a systems problem</p>
+                        <p class="font-bold mb-2">Sustainability is a systems problem</p>
                         <p>We build tools that help teams connect the dots between operations, impact, and accountability.</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./img/Built_For_Clarity/Progress.svg" alt="">
+                <div class="bg-[oklch(97.1%_0.013_17.38)] px-10 py-10">
+                    <img src="./img/Built_For_Clarity/Progress.svg" alt="" class="mb-6">
                     <div>
-                        <p>Progress over perfection</p>
+                        <p class="font-bold mb-2">Progress over perfection</p>
                         <p>We support real-world momentum—helping organizations move from ambition to measurable change.</p>
                     </div>
                 </div>
+            </div>
+         </div>
+
+         <!-- Why Acme inc chose -->
+        <div class="flex flex-col gap-6 px-5 py-[60px] md:flex-row md:gap-10 md:py-20 lg:py-[120px] lg:px-[150px]">
+            <img src="./img/Why_Acme_inc_chose/Why_Acme_inc_chose.svg" alt="" class="w-full">
+            <div class="md:mt-[39px] lg:mt-[47px]">
+                <p class="text-lg font-bold font-radio_2 md:text-xl">Why Acme Inc chose Aetherfield</p>
+                <p class="text-lg mt-4 font-serif-pro md:text-xl">With fragmented data and growing reporting pressure, Acme turned to Aetherfield to streamline their ESG workflows. The result? Faster decisions, fewer spreadsheets, and 34% more coverage.</p>
+                <a href="" class="text-sm font-geist mt-6 h-[38px] text-center bg-black text-white font-radio text-sm flex items-center justify-center hover:opacity-65 duration-300 md:w-[150px]">Read case study</a>
+            </div>
+        </div>
+        <!-- From the journal  -->
+         <!-- Falta mobil y desktop -->
+         <div class="realative px-5 md:px-[90px] lg:px-[330px]">
+            <img src="img/From_the_journal/icon.svg" alt="" class="float absolute hidden md:block">
+            <h4 class="font-bold text-xl text-center">From the journal</h4>
+            <div class="mt-5 md:mt-10 flex flex-col gap-12">
+                <div>   
+                    <div class="mt-12 md:mt-16 flex flex-col md:flex-row lg:gap-4">
+                        <img src="./img/From_the_journal/build.svg" alt="" class="w-full">
+                        <div>
+                            <p class="font-bold mt-4 mb-2">How to Build a Climate-Ready Data Stack</p>
+                            <div class="flex gap-2 items-center opacity-45">
+                                <p>Insights</p>
+                                <p>·</p>
+                                <p>4 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 flex flex-col  md:flex-row lg:gap-4">
+                        <img src="./img/From_the_journal/sustainability.svg" alt="" class="w-full">
+                        <div>
+                            <p class="font-bold mt-4 mb-2">Sustainability Isn’t a Side Project: Making Impact Operational</p>
+                            <div class="flex gap-2 items-center opacity-45">
+                                <p>Strategy</p>
+                                <p>·</p>
+                                <p>7 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 flex flex-col md:flex-row lg:gap-4">
+                        <img src="./img/From_the_journal/inside.svg" alt="" class="w-full">
+                        <div>
+                            <p class="font-bold mt-4 mb-2">Inside the Aetherfield Model: How We Turn Data Into Action</p>
+                            <div class="flex gap-2 items-center opacity-45">
+                                <p>Insights</p>
+                                <p>·</p>
+                                <p>5 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="">View all articles</a>
             </div>
          </div>
     </main>

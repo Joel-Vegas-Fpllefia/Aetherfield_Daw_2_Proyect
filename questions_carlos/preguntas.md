@@ -29,3 +29,6 @@ Tablet: md:max-w-3xl (que crezca hasta un punto cómodo).
 PC: lg:max-w-5xl (que sea grande y clara).
 
 # min-h-screen
+
+
+# El tamaño de los headers tambien tiene que ser responsive o fijos 
