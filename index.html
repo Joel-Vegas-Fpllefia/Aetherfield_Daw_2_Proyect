@@ -12,7 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@400..700&family=Source+Serif+4:opsz,wght@8..60;400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=geist-mono@400&display=swap" rel="stylesheet">
     
+
+
     <script>
         tailwind.config = {
             theme: {
@@ -20,7 +24,10 @@
                 fontFamily: {
                 // 'serif' es el nombre de la clase que usarás, puedes ponerle 'titulo' si prefieres
                 'source': ['"Source Serif 4"', 'sans-serif'],
-                'radio': ['"Radio Canada Big:Regular"', 'sans-serif']
+                'serif-pro': ['"Source Serif Pro"', 'serif'],
+                'radio': ['"Radio Canada Big:Regular"', 'sans-serif'],
+                'radio_2': ['"Radio Canada Big"', 'sans-serif'],
+                'geist': ['"Geist Mono"', 'monospace']
                 }
             }
             }
@@ -107,42 +114,43 @@
         <!-- Everything you need -->
          <div>
             <!-- Revisar Bold al cambiar la fuente -->
-            <h4 class="mt-10 ml-5 mr-5 text-xl text-center font-bold md:mt-20 mr-[94px] ml-[94px] lg:mt-[120px] ml-[334px] mr-[334px]">Everything you need to measure, model, and act on sustainability</h4>
+            <h2 class="mt-10 ml-5 mr-5 text-3xl font-bold text-center font-bold md:mt-20 mr-[94px] ml-[94px] lg:mt-[120px] ml-[334px] mr-[334px]">Everything you need to measure, model, and act on sustainability</h2>
             <div class="flex flex-col gap-6 mt-6 ml-5 mr-5 mb-10 md:mt-10 mb-20 gap-10 lg:flex-row items-center mb-30">
                 <img src="./img/data_img_Everything_section.svg" alt="" class="w-full md:max-w-3xl lg:max-w-5xl">
 
                 <div class="w-full flex flex-col gap-6 mt-6 md:mt-10">
                     <div class="flex flex-col">
+                        <!-- Añadir Fuente al texto -->
                         <div>
                             <div class="flex justify-between mt-5 md:mt-6">
-                                <p>Track</p>
-                                <p>001</p>
+                                <p class="font-bold font-radio_2">Track</p>
+                                <p class="opacity-45 font-geist">001</p>
                             </div>
-                            <p class="mt-3 md:mt-4">Emissions, energy, and waste across your value chain</p>
+                            <p class="mt-3 font-serif-pro md:mt-4">Emissions, energy, and waste across your value chain</p>
                         </div>
 
                         <div>
                             <div class="flex justify-between mt-10 md:mt-12">
-                                <p>Model</p>
-                                <p>002</p>
+                                <p class="font-bold font-radio_2">Model</p>
+                                <p class="opacity-45 font-geist">002</p>
                             </div>
-                            <p class="mt-4">Forecast performance and goal alignment</p>
+                            <p class="mt-4 font-serif-pro">Forecast performance and goal alignment</p>
                         </div>
 
                         <div>
                             <div class="flex justify-between mt-10 md:mt-12">
-                                <p>Report</p>
-                                <p>003</p>
+                                <p class="font-bold font-radio_2">Report</p>
+                                <p class="opacity-45 font-geist">003</p>
                             </div>
-                            <p class="mt-3 md:mt-4">Generate ESG disclosures, automate frameworks</p>
+                            <p class="mt-3 font-serif-pro md:mt-4 ">Generate ESG disclosures, automate frameworks</p>
                         </div>
                         
                         <div>
                             <div class="flex justify-between mt-10 md:mt-12">
-                                <p>Act</p>
-                                <p>004</p>
+                                <p class="font-bold font-radio_2">Act</p>
+                                <p class="opacity-45 font-geist">004</p >
                             </div>
-                            <p class="mt-3 md:mt-4">Surface insights and operational next steps</p>
+                            <p class="mt-3 font-serif-pro md:mt-4">Surface insights and operational next steps</p>
                         </div>
                     </div>
 
@@ -155,7 +163,37 @@
                         </li>
                     </ul>
                 </div>
-
+            </div>
+        </div>
+        
+        <!-- Built for clarity -->
+         <div class="px-5 bg-[oklch(90.1%_0.076_70.697)] realative">
+            <div class="flex flex-col items-center justify-center pt-10  md:pt-20 lg:pt-[120px]">
+                <h2>Built for clarity</h2>
+                <h2>Designed for action</h2>
+            </div>
+            <div>
+                <div>
+                    <img src="./img/Built_For_Clarity/Clarity.svg" alt="">
+                    <div>
+                        <p>Clarity drives action</p>
+                        <p>We believe better decisions start with better data—measured, visible, and trusted.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/Built_For_Clarity/Sustainability.svg" alt="">
+                    <div>
+                        <p>Sustainability is a systems problem</p>
+                        <p>We build tools that help teams connect the dots between operations, impact, and accountability.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/Built_For_Clarity/Progress.svg" alt="">
+                    <div>
+                        <p>Progress over perfection</p>
+                        <p>We support real-world momentum—helping organizations move from ambition to measurable change.</p>
+                    </div>
+                </div>
             </div>
          </div>
     </main>
