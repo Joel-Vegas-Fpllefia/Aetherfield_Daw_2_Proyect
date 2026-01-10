@@ -29,6 +29,9 @@
                 'radio': ['"Radio Canada Big:Regular"', 'sans-serif'],
                 'radio_2': ['"Radio Canada Big"', 'sans-serif'],
                 'geist': ['"Geist Mono"', 'monospace']
+                },
+                backgroundImage: {
+                    'background-3': "linear-gradient(180deg, #A6D3FF 0%, #FFF4DF 100%)",
                 }
             }
             }
@@ -47,9 +50,9 @@
 
             <ul class="flex items-center justify-end md:justify-between w-auto md:w-[395px] m-4">
                 <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">Product</li>
-                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">Journal</li>
-                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">About</li>
-                <li class="hidden md:block font-bold hover:opacity-25 duration-700 cursor-pointer">Carrers</li>
+                <li class="hidden md:block  hover:opacity-25 duration-700 cursor-pointer">Journal</li>
+                <li class="hidden md:block  hover:opacity-25 duration-700 cursor-pointer">About</li>
+                <li class="hidden md:block  hover:opacity-25 duration-700 cursor-pointer">Carrers</li>
                 <li class="hidden md:block">
                     <a href="" class="group md:flex justify-between items-center gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer">
                         <p>Get started</p>
@@ -64,9 +67,9 @@
         <div  id="list_menu_more" class="hidden w-full h-96 pr-5 pb-5 pl-5 md:hidden">
             <ul>
                 <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer">Product</li>
-                <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer">Journal</li>
-                <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer">About</li>
-                <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] font-bold hover:opacity-25 duration-700 cursor-pointer">Carrers</li>
+                <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer">Journal</li>
+                <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer">About</li>
+                <li class="text-2xl pt-6 pb-6 border-b-2 border-bottom-color[oklch(0.922_0_0)] hover:opacity-25 duration-700 cursor-pointer">Carrers</li>
                 <li class="pt-6 flex items-center text-center justify-center ">
                     <a href="" class="h-13 w-full bg-[oklch(14.7%_0.004_49.25)] text-2xl text-white group  gap-1 font-bold hover:opacity-25 duration-700 cursor-pointer">
                         <p class="p-4">Get started</p>
@@ -79,7 +82,7 @@
     <main class="static">
         <!-- Tailwind solo llega hasta el 96 rem = 384px -->
          <!-- Sustaninbility -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center bg-background-3">
             <div class=" mt-[120px] ml-5 mr-5 flex flex-col items-center gap-6 md:gap-8 mt-[140px]">
                 
                 <div class="text-center">
@@ -210,38 +213,38 @@
         </div>
         <!-- From the journal  -->
          <!-- Falta mobil y desktop -->
-         <div class="realative px-5 md:px-[90px] lg:px-[330px]">
-            <img src="img/From_the_journal/icon.svg" alt="" class="float absolute hidden md:block">
-            <h4 class="font-bold text-xl text-center">From the journal</h4>
+         <div class="px-5 md:px-[90px] lg:px-[330px]">
+            <img src="img/From_the_journal/icon.svg" alt="" class="float absolute hidden md:block md:left-[-122px] md:top-[3547.05px] lg:left-[72px] lg:top-[3170px]">
+            <h2 class="font-radio_2 font-bold text-xl md:text-3xl md:font-semibold lg:text-4xl lg:font-bold  text-center">From the journal</h2>
             <div class="mt-5 md:mt-10 flex flex-col gap-12">
                 <div>   
-                    <div class="mt-12 md:mt-16 flex flex-col md:flex-row lg:gap-4">
-                        <img src="./img/From_the_journal/build.svg" alt="" class="w-full">
+                    <div class="mt-12 md:mt-16 flex flex-col md:flex-row md:gap-4 transition-transform duration-500 hover:translate-x-4 cursor-pointer group">
+                        <img src="./img/From_the_journal/build.svg" alt="" class="w-full md:w-[165px] md:h-[100px]">
                         <div>
-                            <p class="font-bold mt-4 mb-2">How to Build a Climate-Ready Data Stack</p>
-                            <div class="flex gap-2 items-center opacity-45">
+                            <p class="font-radio_2 font-bold mt-4 mb-2 md:mt-0 group-hover:opacity-45">How to Build a Climate-Ready Data Stack</p>
+                            <div class="font-sanz flex gap-2 items-center opacity-45">
                                 <p>Insights</p>
                                 <p>·</p>
                                 <p>4 min</p>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-12 flex flex-col  md:flex-row lg:gap-4">
-                        <img src="./img/From_the_journal/sustainability.svg" alt="" class="w-full">
+                    <div class="mt-12 flex flex-col  md:flex-row md:gap-4 transition-transform duration-500 hover:translate-x-4 cursor-pointer group">
+                        <img src="./img/From_the_journal/sustainability.svg" alt="" class="w-full md:w-[165px] md:h-[100px]">
                         <div>
-                            <p class="font-bold mt-4 mb-2">Sustainability Isn’t a Side Project: Making Impact Operational</p>
-                            <div class="flex gap-2 items-center opacity-45">
+                            <p class="font-radio_2 font-bold mt-4 mb-2 md:mt-0 group-hover:opacity-45">Sustainability Isn’t a Side Project: Making Impact Operational</p>
+                            <div class="font-sanz flex gap-2 items-center opacity-45">
                                 <p>Strategy</p>
                                 <p>·</p>
                                 <p>7 min</p>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-12 flex flex-col md:flex-row lg:gap-4">
-                        <img src="./img/From_the_journal/inside.svg" alt="" class="w-full">
+                    <div class="mt-12 flex flex-col  md:flex-row md:gap-4 transition-transform duration-500 hover:translate-x-4 cursor-pointer group">
+                        <img src="./img/From_the_journal/inside.svg" alt="" class="w-full md:w-[165px] md:h-[100px]">
                         <div>
-                            <p class="font-bold mt-4 mb-2">Inside the Aetherfield Model: How We Turn Data Into Action</p>
-                            <div class="flex gap-2 items-center opacity-45">
+                            <p class="font-radio_2 font-bold mt-4 mb-2 md:mt-0 group-hover:opacity-45">Inside the Aetherfield Model: How We Turn Data Into Action</p>
+                            <div class="font-sanz flex gap-2 items-center opacity-45">
                                 <p>Insights</p>
                                 <p>·</p>
                                 <p>5 min</p>
@@ -249,11 +252,43 @@
                         </div>
                     </div>
                 </div>
-                <a href="">View all articles</a>
+                <div class="md:flex md:justify-center">
+                    <a href="" class="text-sm font-geist h-[38px] text-center bg-black text-white font-radio text-sm flex items-center justify-center hover:opacity-65 duration-300 md:w-[167px]">View all articles</a>
+                </div>
             </div>
          </div>
+        <!-- We Finally Moved -->
+        <div class="flex flex-col gap-8 px-5 py-10 md:py-20 md:flex-row md:gap-4 lg:py-30">
+            <img src="./img/We_Finally_Moved/user.svg" alt="" class="w-full lg: max-w-[612px]">
+            <div class="flex flex-col gap-6 md:gap-10 lg:gap-[56px] md:px-10 lg:py-[105px]">
+                <img src="./img/We_Finally_Moved/Quotation.svg" alt="" class="md:mt-[44px] lg:mt-[158px] w-6 h-5 ">
+                <p class="font-bold text-xl md:text-2xl lg:text-3xl">We finally moved past spreadsheets and guesswork. Now we have real data to guide real decisions.</p>
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold">Elliot Williams</p>
+                    <p class="opacity-45 font-bold">Head of Sustainability, Flux Materials</p>
+                </div>
+            </div>
+        </div>
+        <!-- Ready to operationalize -->
+         <div class="flex flex-col items-center px-5 mt-10 md:mt-20 lg:mt-[120px]">
+            <h4 class="font-bold text-xl md:text-2xl lg:text-3xl text-center">Ready to operationalize your sustainability goals?</h4>
+            <ul class="mt-8 md:mt-12 lg:mt-8">
+                <li class="h-[46px] bg-black flex items-center justify-center hover: cursor-pointer w-[164px]">
+                    <a href="" class="text-white font-radio text-sm flex items-center gap-2 hover:opacity-65 duration-300">
+                        <span class="w-1.5 h-1.5 bg-white"></span>
+                        Request a demo
+                    </a>
+                </li>
+            </ul>
+         </div>
     </main>
-    <footer></footer>
+    <footer class="mt-10 md:mt-20 lg:mt-[|20px]">
+        <!-- Preguntar -->
+        <picture>            
+            <source srcset="./img/Footer_Complete.svg" media="(min-width: 768px)">
+            <img src="./img/Footer.svg" alt="Sustainability" class="w-full h-auto">
+        </picture>
+    </footer>
 </body>
 <script>
     const btn_more = document.querySelector("#more_header_btn")

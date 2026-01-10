@@ -32,3 +32,5 @@ PC: lg:max-w-5xl (que sea grande y clara).
 
 
 # El tamaño de los headers tambien tiene que ser responsive o fijos 
+
+# Cuando poner gap y cuando poner justify between para el responsive
