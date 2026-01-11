@@ -34,3 +34,6 @@ PC: lg:max-w-5xl (que sea grande y clara).
 # El tamaño de los headers tambien tiene que ser responsive o fijos 
 
 # Cuando poner gap y cuando poner justify between para el responsive
+
+# El footer es una imagen o es interactivo para el usuario (va a decir que depende del cliente)
+# Como se si tengo que poner un alto y ancho a las imagenes
